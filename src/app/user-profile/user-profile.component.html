@@ -1,0 +1,26 @@
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3">
+                <h1>User</h1>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                    <div class="card text-bg-secondary mb-3" *ngFor ="let i of profile">
+                        <div class="card-header">Name : {{i.name}}</div>
+                        <div class="card-body">
+                          
+                          <p class="card-text">Address : {{i.address}}</p>
+                          <p class="card-text">Email : {{i.email}}</p>
+                          <p class="card-text">Phone Number : {{i.phoneno}}</p>
+                        </div>
+                      </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

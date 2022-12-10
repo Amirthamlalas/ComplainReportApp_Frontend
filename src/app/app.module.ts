@@ -9,7 +9,8 @@ import { UserSignupComponent } from './user-signup/user-signup.component';
 import { UserLoginComponent } from './user-login/user-login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { Router, RouterModule, Routes } from '@angular/router';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { UserProfileComponent } from './user-profile/user-profile.component'
 
 const myroute:Routes=[
   {
@@ -23,6 +24,10 @@ const myroute:Routes=[
   {
     path:"usersignup",
     component:UserSignupComponent
+  },
+  {
+    path:"profile",
+    component:UserProfileComponent
   }
 
 ]
@@ -32,7 +37,8 @@ const myroute:Routes=[
     AdminComponent,
     UserSignupComponent,
     UserLoginComponent,
-    NavbarComponent
+    NavbarComponent,
+    UserProfileComponent
   ],
   imports: [
     BrowserModule,
