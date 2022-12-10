@@ -8,5 +8,16 @@ export class ApiService {
 
   constructor(private http:HttpClient) { }
 
-  
+  signupData=(DataToSend:any)=>{
+    return this.http.post("http://localhost:8080/usersignup",DataToSend)
+  }
+
+  viewProfile=(DataToSend:any)=>{
+    return this.http.post("http://localhost:8080/viewprofile",DataToSend)
+  }
+
+  loginData=(DataToSend:any)=>{
+    return this.http.post("http://localhost:8080/userlogin",DataToSend)
+  }
+
 }

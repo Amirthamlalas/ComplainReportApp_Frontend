@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-user-signup',
@@ -6,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./user-signup.component.css']
 })
 export class UserSignupComponent {
-
+constructor(private api:ApiService){}
         name=""
         phoneno= ""
         address= ""
@@ -23,5 +24,15 @@ readValue=()=>{
     "password": this.password
   }
   console.log(data)
+  this.api.signupData(data).subscribe(
+    (response:any)=>{
+      if (response.status=="success") {
+        alert("User added Successfully")
+        
+      } else {
+        alert("Something went wrong")
+      }
+    }
+  )
 }
 }
