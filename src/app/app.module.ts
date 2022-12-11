@@ -11,7 +11,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { Router, RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { UserProfileComponent } from './user-profile/user-profile.component';
-import { AddComplaintComponent } from './add-complaint/add-complaint.component'
+import { AddComplaintComponent } from './add-complaint/add-complaint.component';
+import { UserNavbarComponent } from './user-navbar/user-navbar.component'
 
 const myroute:Routes=[
   {
@@ -44,7 +45,8 @@ const myroute:Routes=[
     UserLoginComponent,
     NavbarComponent,
     UserProfileComponent,
-    AddComplaintComponent
+    AddComplaintComponent,
+    UserNavbarComponent
   ],
   imports: [
     BrowserModule,
