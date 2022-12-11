@@ -14,7 +14,8 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
 import { AddComplaintComponent } from './add-complaint/add-complaint.component';
 import { UserNavbarComponent } from './user-navbar/user-navbar.component';
 import { ViewComplaintComponent } from './view-complaint/view-complaint.component';
-import { ViewAllComplaintComponent } from './view-all-complaint/view-all-complaint.component'
+import { ViewAllComplaintComponent } from './view-all-complaint/view-all-complaint.component';
+import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component'
 
 const myroute:Routes=[
   {
@@ -59,7 +60,8 @@ const myroute:Routes=[
     AddComplaintComponent,
     UserNavbarComponent,
     ViewComplaintComponent,
-    ViewAllComplaintComponent
+    ViewAllComplaintComponent,
+    AdminNavbarComponent
   ],
   imports: [
     BrowserModule,
