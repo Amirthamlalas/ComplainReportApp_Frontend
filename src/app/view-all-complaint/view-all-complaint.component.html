@@ -1,0 +1,27 @@
+
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3">
+               <h1>Complaints</h1>
+               <a routerLink="/">Log Out</a>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                    <div class="card text-bg-secondary mb-3" *ngFor ="let i of data">
+                        <div class="card-header">Name : {{i.name}}</div>
+                        <p>Phone : {{i.phoneno}}</p>
+                        <p>Email : {{i.email}}</p>
+                        <p>Complaint : {{i.complaints}}</p>
+                       
+                          
+                       
+                      </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
