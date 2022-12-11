@@ -10,7 +10,8 @@ import { UserLoginComponent } from './user-login/user-login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { Router, RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
-import { UserProfileComponent } from './user-profile/user-profile.component'
+import { UserProfileComponent } from './user-profile/user-profile.component';
+import { AddComplaintComponent } from './add-complaint/add-complaint.component'
 
 const myroute:Routes=[
   {
@@ -28,6 +29,10 @@ const myroute:Routes=[
   {
     path:"profile",
     component:UserProfileComponent
+  },
+  {
+    path:"complain",
+    component:AddComplaintComponent
   }
 
 ]
@@ -38,7 +43,8 @@ const myroute:Routes=[
     UserSignupComponent,
     UserLoginComponent,
     NavbarComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    AddComplaintComponent
   ],
   imports: [
     BrowserModule,
